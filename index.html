@@ -16,7 +16,23 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <!-- Dark Mode -->
+    
+    <input type="checkbox" id="day-night" />
+
+    <div class="style__switcher"> 
+      <label for="day-night" class="style__switcher-theme">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </label>
+    </div>
+
+
     <!-- Header -->
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>  <!-- hemburger -->
+
     <header class="header">
       <nav class="nav container">
         <a href="#about" class="nav_logo">Dhruval</a>
@@ -38,7 +54,6 @@
       </nav>
     </header>
 
-    <!--  Main -->
     <main class="main">
     
       <!-- Home -->
@@ -102,28 +117,20 @@
             </ul>
 
             <div class="about_bottom">
-              <a href="" class="btn">Download Cv</a>
+              <a href="assets/pdf/DhruvalSoni-Resume.pdf" class="btn">View Resume</a>
 
               <div class="about_social-links">
 
-                <a href="" class="about_social-link">
+                <a href="http://linkedin.com/in/dhruval-soni" class="about_social-link">
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
 
-                <a href="" class="about_social-link">
+                <a href="https://github.com/dhruvalSoni2612" class="about_social-link">
                   <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a href="" class="about_social-link">
+                <a href="https://www.instagram.com/soni.dhruval_" class="about_social-link">
                   <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="" class="about_social-link">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </a>
-
-                <a href="" class="about_social-link">
-                  <i class="fa-brands fa-square-facebook"></i>
                 </a>
 
               </div>
@@ -141,21 +148,11 @@
         <div class="skills_container container grid">
           <div class="skills_item">
             <div class="skills_title">
-              <h3 class="skills_name">HTML5</h3>
+              <h3 class="skills_name">HTML, CSS, and Bootstrap Proficiency</h3>
             </div>
 
             <p class="skills_description">
-              Skilled in semantic markup, responsive design, form creation, and multimedia integration, I craft visually appealing and user-friendly web pages.
-            </p>
-          </div>
-
-          <div class="skills_item">
-            <div class="skills_title">
-              <h3 class="skills_name">CSS</h3>
-            </div>
-
-            <p class="skills_description">
-              I excel in CSS, adept at crafting visually stunning and responsive web designs. With expertise in CSS, I create dynamic layouts, implement stylish themes, and enhance user experience through animations and transitions. Committed to staying updated with the latest trends
+              As a web developer, I possess a comprehensive understanding of HTML, CSS, and Bootstrap. I excel in crafting well-structured, semantic HTML code for optimal accessibility and search engine performance. My expertise in CSS extends to creating visually appealing layouts and interfaces, incorporating animations and transitions where necessary. Additionally, I leverage Bootstrap to streamline development, ensuring responsiveness and consistency across various devices. With these skills, I can create dynamic and user-friendly web experiences that meet the highest standards of design and functionality
             </p>
           </div>
 
@@ -179,6 +176,16 @@
             </p>
           </div>
 
+          <div class="skills_item">
+            <div class="skills_title">
+              <h3 class="skills_name">SQL and MongoDB</h3>
+            </div>
+
+            <p class="skills_description">
+              I have a good understanding of SQL and MongoDB, which are both important for managing data in web development. With SQL, I can set up and manage databases in a structured way, making sure information is organized and easy to access. MongoDB is a bit different; it's a NoSQL database that doesn't need a fixed schema, making it more flexible for certain projects. I know how to work with both to store and retrieve data effectively. 
+            </p>
+          </div>
+
         </div>
       </section>
 
@@ -193,54 +200,55 @@
             <img src="assets/img/Ecommerce_img.png" alt="" class="work_img" />
             <div class="work_details">
               <h3 class="work_title">E-commerce Website</h3>
-              <span class="work_description"
-                >Lorem ipsum dolor sit amet ?</span
-              >
+              <span class="work_description">
+                <a class="code_link" href="https://github.com/dhruvalSoni2612/Clothing-Website">Click to show code</a>
+              </span>
             </div>
           </div>
 
           <div class="work_card">
             <img src="assets/img/xoGame.png" alt="" class="work_img" />
             <div class="work_details">
-              <h3 class="work_title">Andriod app</h3>
-              <span class="work_description">Lorem ipsum dolor sit amet</span>
+              <h3 class="work_title">Tic-Tac-Toe Game</h3>
+              <span class="work_description">
+                <a class="code_link" href="https://github.com/dhruvalSoni2612/Tic-Tac-ToeGame">Click to show code</a>
+              </span>
             </div>
           </div>
 
           <div class="work_card">
             <img src="assets/img/responsive_img.png" alt="" class="work_img" />
             <div class="work_details">
-              <h3 class="work_title">PhotoShop</h3>
-              <span class="work_description">Lorem ipsum dolor sit amet</span>
+              <h3 class="work_title">Jewellery Shop</h3>
+              <span class="work_description">
+                <a class="code_link" href="https://github.com/dhruvalSoni2612/JewelleryWebsite">Click to show code</a>
+              </span>
             </div>
           </div>
 
           <div class="work_card">
             <img src="assets/img/spsGame.png" alt="" class="work_img" />
             <div class="work_details">
-              <h3 class="work_title">4th photo title</h3>
-              <span class="work_description"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid quas quia dignissimos?</span
-              >
+              <h3 class="work_title">Stone-Paper-Scissor Game</h3>
+              <span class="work_description">
+                <a class="code_link" href="https://github.com/dhruvalSoni2612/StonePaperScissor-Game">Click to show code</a>
+                </span>
             </div>
           </div>
 
           <div class="work_card">
             <img src="assets/img/socialMediaApp_img.png" alt="" class="work_img" />
             <div class="work_details">
-              <h3 class="work_title">5th photo title</h3>
-              <span class="work_description"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid quas quia dignissimos?</span
-              >
+              <h3 class="work_title">Social-Media App</h3>
+              <span class="work_description">
+                </span>
             </div>
           </div>
 
         </div>
       </section>
 
-      <!-- =======Footer============ -->
+      <!-- Footer -->
       <footer class="footer">
         <div class="footer_container container">
           <p class="footer_email">
@@ -249,29 +257,22 @@
 
           <div class="footer_social-links">
             
-            <a href="" class="footer_social-link">
+            <a href="http://linkedin.com/in/dhruval-soni" class="footer_social-link">
               <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a href="" class="footer_social-link">
+            <a href="https://github.com/dhruvalSoni2612" class="footer_social-link">
               <i class="fa-brands fa-github"></i>
             </a>
 
-            <a href="" class="footer_social-link">
+            <a href="https://www.instagram.com/soni.dhruval_" class="footer_social-link">
               <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="" class="footer_social-link">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-
-            <a href="" class="footer_social-link">
-              <i class="fa-brands fa-square-facebook"></i>
             </a>
 
             
           </div>
         </div>
       </footer>
+      <script src="index.js"></script>
   </body>
 </html>

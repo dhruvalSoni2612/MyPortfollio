@@ -89,7 +89,7 @@ img {
 }
 
 .section {
-  padding-block: 6rem;
+  padding-block: 2rem;
 }
 .section_title {
   font-size: var(--h1-font-size);
@@ -187,15 +187,6 @@ input[type="checkbox"] {
   font-size: 1.5rem;
 }
 
-.nav_list {
-  display: flex;
-  align-items: center;
-}
-
-/* .nav {
-  display: flex;
-} */
-
 .nav {
   display: flex;
   height: calc(var(--header-height)+ 2.25rem);
@@ -208,6 +199,8 @@ input[type="checkbox"] {
 }
 
 .nav_list {
+  display: flex;
+  align-items: center;
   column-gap: 1.5rem;
 }
 .nav_link {
@@ -216,7 +209,6 @@ input[type="checkbox"] {
 }
 
 /* Active link */
-.active-link,
 .nav_link:hover {
   color: var(--first-color);
 }
@@ -230,7 +222,7 @@ input[type="checkbox"] {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
-.home_smal {
+.home_small {
   font-size: var(--large-font-size);
   font-weight: var(--weight-600);
   letter-spacing: 1px;
@@ -253,16 +245,14 @@ input[type="checkbox"] {
   position: relative;
 }
 .home_img {
-  animation: animation__after 8s ease-in-out infinite;
-}
-.home_img {
   z-index: 10;
   position: relative;
   vertical-align: middle;
+  animation: animation_round 8s ease-in-out infinite;
 }
 
 /* home animation */
-@keyframes animation__after {
+@keyframes animation_round {
   0% {
     border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
   }
@@ -527,22 +517,25 @@ input[type="checkbox"] {
   }
 
   .home_img-wrapper {
-    margin-left: 0;
-    margin-bottom: 3rem;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 0 auto;
   }
 
   .home_title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .home_description {
     margin: 0 auto;
-    padding: 0 1.5rem;
-    font-size: 1.5rem;
+    padding: 0 1.1rem;
+    font-size: 1rem;
   }
 
   .home_btns {
     flex-direction: column;
+    align-items: center;
   }
 
   /* About */
@@ -553,17 +546,27 @@ input[type="checkbox"] {
   }
 
   .about_img-wrapper {
-    margin-right: 0;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 0 auto;
   }
 
   .about_description {
     padding: 0 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .about_data,
   .about_bottom {
     flex-direction: column;
+  }
+  .data_item {
+    flex-direction: column;
+    gap: 3px;
+  }
+  .btn {
+    margin-bottom: 1rem;
   }
 
   /* Skills */
@@ -575,6 +578,10 @@ input[type="checkbox"] {
 
   .skills_item {
     text-align: left;
+  }
+
+  .skills_description {
+    font-size: 1rem;
   }
 
   /* Portfolio */

@@ -463,6 +463,7 @@ input[type="checkbox"] {
     top: 1rem;
     left: 1rem;
     z-index: 1000;
+    color: var(--text-color);
   }
 
   .menu-icon:hover {

@@ -608,10 +608,6 @@ input[type="checkbox"] {
   .work_card {
     margin-bottom: 3rem;
   }
-  .secWidth {
-    width: 80%;
-    margin: 0 auto;
-  }
 
   .work_card img {
     height: 150px;

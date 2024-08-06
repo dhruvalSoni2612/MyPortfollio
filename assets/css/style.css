@@ -370,58 +370,79 @@ input[type="checkbox"] {
 }
 
 /* portfolio */
+
+/* Container styling */
 .work_container {
-  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
+/* Individual card styling */
 .work_card {
-  position: relative;
-  cursor: pointer;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.work_details {
-  position: absolute;
-  inset: 0;
-  background-color: hsla(0, 0%, 0%, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
+.work_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.work_title {
-  font-size: var(--h3-font-size);
+/* Image styling */
+.work_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.work_title,
+/* Info section styling */
+.work_info {
+  padding: 20px;
+}
+
+.work_name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
 .work_description {
-  color: var(--white);
-  transform: translateY(1.5rem);
-  transition: all 0.3s ease-in-out;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  color: #555;
+  background-color: #f9f9f9;
+  padding: 10px;
+  line-height: 1.4;
+  border-radius: 5px;
 }
 
-.work_description {
-  font-size: var(--large-font-size);
-}
-.code_link {
-  color: skyblue;
+/* Link styling */
+.work_link {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  color: #007bff;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* work hover */
-.work_card:hover .work_details {
-  opacity: 1;
-}
-
-.work_card:hover :is(.work_title, .work_description) {
-  transform: translateY(0);
+.work_link:hover {
+  background-color: #007bff;
+  color: #fff;
 }
 
 /* footer */
 .footer {
   background-color: var(--container-color);
-  padding-block: 3rem;
+  padding-block: 1rem;
 }
 
 .footer_container {

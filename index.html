@@ -4,36 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <!-- Font Awsome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
   <!--------- Bootstrap v5.2 ------------->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
-
   <title>My Portfolio</title>
 </head>
 
 <body>
   <!-- Dark Mode -->
-
   <input type="checkbox" id="day-night" />
-
   <div class="style__switcher">
     <label for="day-night" class="style__switcher-theme">
       <i class="fa-solid fa-sun"></i>
       <i class="fa-solid fa-moon"></i>
     </label>
   </div>
-
-
-  <!-- Header -->
-
-  <!-- hemburger -->
 
   <header class="header">
     <nav class="nav container">
@@ -59,7 +48,6 @@
   </header>
 
   <main class="main">
-
     <!-- Home -->
     <section id="home" class="home">
       <div class="container home_container grid">
@@ -90,18 +78,14 @@
 
     <!-- About -->
     <section class="about section" id="about">
+      
+      <h2 class="section_title title-center">About</h2>
+
       <div class="about_container container grid">
         <div class="about_img-wrapper">
           <img src="assets/img/profilePic.jpeg" alt="" class="about_img" />
         </div>
         <div class="about_content">
-
-          <p class="about_description">
-            I'm always open to new opportunities and collaborations. Whether you're looking for a motivated frontend
-            developer or just want to chat about web development, feel free to reach out to me through Email or
-            Linkedin.
-          </p>
-
           <ul class="about_data grid">
             <li class="data_item">
               <h3 class="data_title">Name:</h3>
@@ -150,83 +134,42 @@
       </h2>
 
       <div class="skills_container container grid">
-        <div class="skills_item">
-          <div class="skills_title">
-            <h3 class="skills_name">HTML, CSS, Bootstrap and Tailwind CSS</h3>
-          </div>
-
-          <p class="skills_description">
-            I'm skilled in HTML, CSS, and CSS frameworks. I excel in crafting well-structured, semantic HTML code for
-            optimal accessibility and search engine performance. My expertise in CSS extends to creating visually
-            appealing layouts and interfaces, incorporating animations and transitions where necessary. I also use
-            frameworks like Bootstrap and Tailwind CSS to speed up development and ensure that websites work well on
-            different devices.
-          </p>
+        <div class="skills_images">
+          <img src="./assets/img/html.png" alt="">
+          <p>HTML5</p>
         </div>
-
-        <div class="skills_item">
-          <div class="skills_title">
-            <h3 class="skills_name">JavaScript</h3>
-          </div>
-
-          <p class="skills_description">
-            I'm proficient in JavaScript, enabling me to create interactive and dynamic web experiences. With a strong
-            grasp of ES6+ syntax and modern JavaScript frameworks, I develop functional and engaging web applications.
-            Committed to continuous learning, I strive to leverage JavaScript's versatility to solve complex problems
-            and enhance user experiences.
-          </p>
+        <div class="skills_images">
+          <img src="./assets/img/css.png" alt="">
+          <p>CSS3</p>
         </div>
-
-        <div class="skills_item">
-          <div class="skills_title">
-            <h3 class="skills_name">React, Redux</h3>
-          </div>
-
-          <p class="skills_description">
-            I'm skilled in React, a powerful JavaScript library for building user interfaces. With expertise in
-            component-based architecture and state management, I develop efficient and scalable web applications.
-            Committed to staying updated with React's latest features and best practices.
-          </p>
+        <div class="skills_images">
+          <img src="./assets/img/javascript.png" alt="">
+          <p>JAVASCRIPT</p>
         </div>
-
-        <div class="skills_item">
-          <div class="skills_title">
-            <h3 class="skills_name">Node.js, Express</h3>
-          </div>
-
-          <p class="skills_description">
-            With Node.js, I can leverage JavaScript beyond the browser, enabling me to build server-side applications
-            and command-line tools. My familiarity with Express empowers me to develop web applications and RESTful APIs
-            on top of Node.js. I'm familiar with template engines such as EJS and Pug used in Express to generate
-            dynamic HTML content on the server-side.
-          </p>
+        <div class="skills_images">
+          <img src="./assets/img/bootstrap.jfif" alt="">
+          <p>BOOTSTRAP</p>
         </div>
-
-
-        <div class="skills_item">
-          <div class="skills_title">
-            <h3 class="skills_name">SQL and MongoDB</h3>
-          </div>
-
-          <p class="skills_description">
-            I have a good understanding of SQL and MongoDB, which are both important for managing data in web
-            development. With SQL, I can set up and manage databases in a structured way, making sure information is
-            organized and easy to access. MongoDB is a bit different; it's a NoSQL database that doesn't need a fixed
-            schema, making it more flexible for certain projects. I know how to work with both to store and retrieve
-            data effectively.
-          </p>
+        <div class="skills_images">
+          <img src="./assets/img/tailwind.jfif" alt="">
+          <p>TAILWIND CSS</p>
         </div>
-
-        <div class="skills_item">
-          <div class="skills_title">
-            <h3 class="skills_name">Soft Skills</h3>
-          </div>
-
-          <p class="skills_description">
-            Communication, Teamwork, problem-solving, Creativity, Continuous Learning
-          </p>
+        <div class="skills_images">
+          <img src="./assets/img/react.png" alt="">
+          <p>REACT JS</p>
         </div>
-
+        <div class="skills_images">
+          <img src="./assets/img/node.png" alt="">
+          <p>NODE JS</p>
+        </div>
+        <div class="skills_images">
+          <img src="./assets/img/mongodb.png" alt="">
+          <p>MONGODB</p>
+        </div>
+        <div class="skills_images">
+          <img src="./assets/img/redux.png" alt="">
+          <p>REDUX</p>
+        </div>
       </div>
     </section>
 

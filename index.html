@@ -11,6 +11,7 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>My Portfolio</title>
 </head>
 
@@ -51,7 +52,7 @@
     <!-- Home -->
     <section id="home" class="home">
       <div class="container home_container grid">
-        <div class="home_content">
+        <div class="home_content" data-aos="fade-right">
           <span class="home_small">Hello</span>
 
           <h1 class="home_title">
@@ -70,7 +71,7 @@
             <a href="#works" class="btn btn--transparent">Portfolio</a>
           </div>
         </div>
-        <div class="home_img-wrapper">
+        <div class="home_img-wrapper" data-aos="fade-left">
           <img src="assets/img/home_img.jpg" alt="My Image" class="home_img" />
         </div>
       </div>
@@ -79,13 +80,13 @@
     <!-- About -->
     <section class="about section" id="about">
       
-      <h2 class="section_title title-center">About</h2>
+      <h2 class="section_title title-center" data-aos="zoom-in">About</h2>
 
       <div class="about_container container grid">
-        <div class="about_img-wrapper">
+        <div class="about_img-wrapper" data-aos="fade-right">
           <img src="assets/img/profilePic.jpeg" alt="" class="about_img" />
         </div>
-        <div class="about_content">
+        <div class="about_content" data-aos="fade-left">
           <ul class="about_data grid">
             <li class="data_item">
               <h3 class="data_title">Name:</h3>
@@ -129,44 +130,44 @@
 
     <!-- Skills -->
     <section class="skills section" id="skills">
-      <h2 class="section_title title-center">
+      <h2 class="section_title title-center" data-aos="zoom-in">
         Skills
       </h2>
 
       <div class="skills_container container grid">
-        <div class="skills_images">
+        <div class="skills_images" data-aos="fade-right">
           <img src="./assets/img/html.png" alt="">
           <p>HTML5</p>
         </div>
-        <div class="skills_images">
+        <div class="skills_images" data-aos="zoom-in-up">
           <img src="./assets/img/css.png" alt="">
           <p>CSS3</p>
         </div>
-        <div class="skills_images">
+        <div class="skills_images" data-aos="fade-left">
           <img src="./assets/img/javascript.png" alt="">
           <p>JAVASCRIPT</p>
         </div>
-        <div class="skills_images">
+        <div class="skills_images" data-aos="fade-right">
           <img src="./assets/img/bootstrap.jfif" alt="">
           <p>BOOTSTRAP</p>
         </div>
-        <div class="skills_images">
+        <div class="skills_images" data-aos="zoom-in-up">
           <img src="./assets/img/tailwind.jfif" alt="">
           <p>TAILWIND CSS</p>
         </div>
-        <div class="skills_images">
+        <div class="skills_images" data-aos="fade-left">
           <img src="./assets/img/react.png" alt="">
           <p>REACT JS</p>
         </div>
-        <div class="skills_images">
+        <div class="skills_images" data-aos="fade-right">
           <img src="./assets/img/node.png" alt="">
           <p>NODE JS</p>
         </div>
-        <div class="skills_images">
+        <div class="skills_images" data-aos="zoom-in-up">
           <img src="./assets/img/mongodb.png" alt="">
           <p>MONGODB</p>
         </div>
-        <div class="skills_images">
+        <div class="skills_images" data-aos="fade-left">
           <img src="./assets/img/redux.png" alt="">
           <p>REDUX</p>
         </div>
@@ -175,13 +176,13 @@
 
     <!-- portfolio -->
     <section class="works section" id="works">
-      <h2 class="section_title title-center" data-title="My Portfolio">
+      <h2 class="section_title title-center" data-title="My Portfolio" data-aos="zoom-in">
         Recent Works
       </h2>
 
       <div class="work_container container grid">
 
-        <div class="work_card">
+        <div class="work_card" data-aos="zoom-in-right">
           <img class="work_img" src="./assets/img/Ecom1.png" alt="">
           <div class="work_info">
             <h3 class="work_name">E-commerce Website</h3>
@@ -193,7 +194,7 @@
           </div>
         </div>
 
-        <div class="work_card">
+        <div class="work_card" data-aos="zoom-in-down">
           <img class="work_img" src="./assets/img/musicp1.png" alt="">
           <div class="work_info">
             <h3 class="work_name">Music Player</h3>
@@ -204,7 +205,7 @@
           </div>
         </div>
 
-        <div class="work_card">
+        <div class="work_card" data-aos="zoom-in-left">
           <img class="work_img" src="./assets/img/game1.png" alt="">
           <div class="work_info">
             <h3 class="work_name">Games</h3>
@@ -216,7 +217,7 @@
           </div>
         </div>
 
-        <div class="work_card">
+        <div class="work_card" data-aos="zoom-in-right">
           <img class="work_img" src="./assets/img/blogin1.png" alt="">
           <div class="work_info">
             <h3 class="work_name">Blogging Website</h3>
@@ -227,7 +228,7 @@
           </div>
         </div>
 
-        <div class="work_card">
+        <div class="work_card" data-aos="zoom-in-up">
           <img class="work_img" src="./assets/img/jew1.png" alt="">
           <div class="work_info">
             <h3 class="work_name">Online Jewellery Store</h3>
@@ -238,7 +239,7 @@
           </div>
         </div>
 
-        <div class="work_card">
+        <div class="work_card" data-aos="zoom-in-left">
           <img class="work_img" src="./assets/img/som1.png" alt="">
           <div class="work_info">
             <h3 class="work_name">Social media App</h3>
@@ -277,6 +278,10 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({duration: 800});
+    </script>
 </body>
 
 </html>
